@@ -3,7 +3,9 @@
 "Repeater" style XSS post-exploitation tool for mass browser control. Primarily a PoC to show why HttpOnly flag isn't a complete protection against session hijacking via XSS.
 
 ## Dependencies:
+```
 pip install -r requirements.txt
+```
 
 ## Usage:
 to run the tool, simply use:
@@ -24,7 +26,7 @@ In order to hook a victim, you should write the following script tag to a page v
 
 
 ## Asynchronous payloads:
-To overide normal task output data within your payload (for example in order to retrieve output from XMLHttpRequest), call the "sendOutput" function and pass it your intended output. For example:
+To override normal task output data within your payload (for example in order to retrieve output from XMLHttpRequest), call the "sendOutput" function and pass it your intended output. For example:
 
 ```javascript
 var xmlhttp = new XMLHttpRequest();
